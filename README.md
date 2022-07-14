@@ -32,3 +32,5 @@
 Get the Case:  [thingiverser](https://www.thingiverse.com/thing:5430313)
 
 ![Case](https://github.com/pixelEDI/attiny_binaryclock/blob/main/BinaryClock3D.jpg)
+
+You like it? Then I would be very happy if you treat me to a coffee on [ko-fi.com/pixeledi](https://www.ko-fi.com/pixeledi)
