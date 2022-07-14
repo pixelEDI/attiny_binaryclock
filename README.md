@@ -12,17 +12,16 @@
  
 - Now its time to programm the ATtiny with PlatformIO
 - Set the pins for the hour LEDs and the shift register for the minute LEDs
-- We first convert the binary coded decimal to normal decimal numbers
-- Than we get the time and convert the minutes and hours to binary and store it in an array.
+- The data we receive from the RTC module is in binary coded decimal (=half byte). So the easiest way to use it is to convert it into decimal numbers.
+- Later on we convert the decimal into binary code and store it in arrays
 - For the hours we turn the LEDs on and of directly with digitalWrite and pinNumber (array).
-- For the minutes we turn the LEDs on and of with the shift register.
+- For the minutes we use the shift register.
 - The last function resets the shift register so that no old values are displayed when you switch on the clock.
-- 
 
 
 ## Hardware
 - This DIY binary clock runns on an ATtiny44 combined with a 74HC595N shift register and a RTC Module DS1307.
-- We added 100 Ω resistors for the LEDs and a 4,7k Ω for the SDA pin of the ATtiny whitch is connected to the RTC Module (I2C protocoll).
+- We added 100 Ω resistors for the LEDs and a 4,7k Ω for the SDA pin of the ATtiny which is connected to the RTC Module (I2C protocol).
 
 ![Verdrahtung](https://github.com/pixelEDI/attiny_binaryclock/blob/main/binaryClockWithShiftRegister_wiring.jpg)
 
